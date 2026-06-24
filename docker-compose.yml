@@ -1,0 +1,15 @@
+name: application
+services: 
+ 
+  ui:
+    
+    image:
+    ports:
+      - "3000: 3000"
+
+    environment: 
+      - BACKEND_HOST=host.docker.internal
+      - BACKEND_PORT=8082
+    
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
