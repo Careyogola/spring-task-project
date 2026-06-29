@@ -14,7 +14,8 @@ public record CreateTaskRequestDTO(
     String title, 
     String description, 
     LocalDate duDate, 
-    TaskPriority priority) {
+    TaskPriority priority) 
+    {
 
         private static final String ERROR_MESSAGE_TITLE_LENGTH = "Title must be between 1 and 255 characters";
 
